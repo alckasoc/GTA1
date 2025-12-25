@@ -19,16 +19,12 @@ pip install pycocotools
 pip install openai
 pip install httpx[socks]
 
-python -c "from datasets import load_dataset; ds = load_dataset('HelloKKMe/grounding_dataset')"
-
 RUN_NAME=test
-srun torchrun \
-    --nnodes $SLURM_JOB_NUM_NODES \
+torchrun \
     --nproc_per_node 8 \
     --max-restarts 3 \
-    --rdzv_id $SLURM_JOB_ID \
     --rdzv_backend c10d \
-    --rdzv_endpoint "$RDZV_HOST:$RDZV_PORT"  src/grpo_grounding.py \
+    --rdzv_endpoint "localhost:29500" src/grpo_grounding.py \
     --deepspeed local_scripts/zero3.json \
     --output_dir grounding/$RUN_NAME \
     --model_name_or_path "Qwen/Qwen2.5-VL-3B-Instruct"  \
