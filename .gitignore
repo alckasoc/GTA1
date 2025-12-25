@@ -1,0 +1,4 @@
+**/pycache/*
+src/trainer/__pycache__/__init__.cpython-310.pyc
+src/trainer/__pycache__/grpo_config.cpython-310.pyc
+src/trainer/__pycache__/grpo_trainer.cpython-310.pyc
