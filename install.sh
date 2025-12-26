@@ -60,12 +60,12 @@ torchrun \
     --deepspeed local_scripts/zero3.json \
     --output_dir grounding/$RUN_NAME \
     --model_name_or_path "Qwen/Qwen2.5-VL-3B-Instruct"  \
-    --dataset_name data/inp.json \
-    --image_root "./data/images/image" \
+    --dataset_name images/inp.json \
+    --image_root "./images/" \
     --max_prompt_length 1024 \
     --max_completion_length 128 \
     --num_generations 8 \
-    --per_device_train_batch_size 16 \
+    --per_device_train_batch_size 4 \
     --freeze_vision_modules true \
     --reward_funcs accuracy \
     --beta 0 \
