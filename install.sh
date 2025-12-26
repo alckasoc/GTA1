@@ -1,4 +1,7 @@
-rm -rf $HOME/miniconda3 && wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O /tmp/miniconda.sh && bash /tmp/miniconda.sh -b -p $HOME/miniconda3 && rm /tmp/miniconda.sh && $HOME/miniconda3/bin/conda init bash
+# ARM64
+# rm -rf $HOME/miniconda3 && wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O /tmp/miniconda.sh && bash /tmp/miniconda.sh -b -p $HOME/miniconda3 && rm /tmp/miniconda.sh && $HOME/miniconda3/bin/conda init bash
+# X86_64
+rm -rf $HOME/miniconda3 && wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /tmp/miniconda.sh && bash /tmp/miniconda.sh -b -p $HOME/miniconda3 && rm /tmp/miniconda.sh && $HOME/miniconda3/bin/conda init bash
 source ~/.bashrc
 
 conda create -n vlm-r1 python=3.10
@@ -26,7 +29,10 @@ pip install \
 pip install torch==2.9.0 --index-url https://download.pytorch.org/whl/cu128
 pip install torchvision==0.24.0 --index-url https://download.pytorch.org/whl/cu128
 # https://flashattn.dev/
+# ARM64
 pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.6.4/flash_attn-2.8.3%2Bcu128torch2.9-cp310-cp310-linux_aarch64.whl
+# X86_64
+pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.0/flash_attn-2.8.3%2Bcu128torch2.9-cp310-cp310-linux_x86_64.whl
 pip install deepspeed
 
 wandb login
