@@ -39,6 +39,18 @@ wandb login
 
 sudo rm -rf grounding
 
+# download dataset
+mkdir data
+mkdir data/images
+# check tmp.ipynb to download dataset
+cd data
+cat image.part.* > image.zip
+mv image.zip images/image.zip
+cd images
+unzip image.zip
+rm image.zip
+cd ../..
+
 RUN_NAME=test
 torchrun \
     --nproc_per_node 2 \
@@ -48,12 +60,12 @@ torchrun \
     --deepspeed local_scripts/zero3.json \
     --output_dir grounding/$RUN_NAME \
     --model_name_or_path "Qwen/Qwen2.5-VL-3B-Instruct"  \
-    --dataset_name preprocessing/inp.json \
-    --image_root "./preprocessing" \
+    --dataset_name data/inp.json \
+    --image_root "./data/images/image" \
     --max_prompt_length 1024 \
     --max_completion_length 128 \
     --num_generations 8 \
-    --per_device_train_batch_size 4 \
+    --per_device_train_batch_size 16 \
     --freeze_vision_modules true \
     --reward_funcs accuracy \
     --beta 0 \
