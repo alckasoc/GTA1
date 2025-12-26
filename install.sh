@@ -29,6 +29,8 @@ pip install torchvision==0.24.0 --index-url https://download.pytorch.org/whl/cu1
 pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.6.4/flash_attn-2.8.3%2Bcu128torch2.9-cp310-cp310-linux_aarch64.whl
 pip install deepspeed
 
+wandb login
+
 RUN_NAME=test
 torchrun \
     --nproc_per_node 1 \
@@ -54,7 +56,8 @@ torchrun \
     --bf16 \
     --torch_dtype bfloat16 \
     --data_seed 42 \
-    --report_to tensorboard \
+    --report_to wandb \
+    --project gta1 \
     --gradient_checkpointing true \
     --attn_implementation flash_attention_2 \
     --num_train_epochs 2 \
