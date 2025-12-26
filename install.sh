@@ -37,9 +37,11 @@ pip install deepspeed
 
 wandb login
 
+sudo rm -rf grounding
+
 RUN_NAME=test
 torchrun \
-    --nproc_per_node 1 \
+    --nproc_per_node 2 \
     --max-restarts 3 \
     --rdzv_backend c10d \
     --rdzv_endpoint "localhost:29500" src/grpo_grounding.py \
@@ -51,7 +53,7 @@ torchrun \
     --max_prompt_length 1024 \
     --max_completion_length 128 \
     --num_generations 8 \
-    --per_device_train_batch_size 8 \
+    --per_device_train_batch_size 4 \
     --freeze_vision_modules true \
     --reward_funcs accuracy \
     --beta 0 \
