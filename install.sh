@@ -67,7 +67,7 @@ torchrun \
     --gradient_checkpointing true \
     --attn_implementation flash_attention_2 \
     --num_train_epochs 2 \
-    --run_name output/$RUN_NAME \
+    --run_name $RUN_NAME \
     --save_steps 10 \
     --save_total_limit 4 \
     --save_only_model false
