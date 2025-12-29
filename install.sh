@@ -86,12 +86,3 @@ torchrun \
     --save_total_limit 4
 
 python src/run_eval.py
-
-python src/inference.py \
-    --model_path /home/ubuntu/GTA1/grounding/test \
-    --image_path /home/ubuntu/GTA1/images/dataset/Aria-UI_Data/web/images/screenshot_0b1312fe-a57d-4201-8a49-71f73917ad69_part_3.png \
-    --instruction "click on related products" \
-    --output_image /home/ubuntu/GTA1/test_img.png \
-    --gt_x 722 \
-    --gt_y 709 \
-    --gt_bbox 714,694,731,724
