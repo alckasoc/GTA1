@@ -65,7 +65,7 @@ torchrun \
     --max_prompt_length 1024 \
     --max_completion_length 128 \
     --num_generations 8 \
-    --per_device_train_batch_size 4 \
+    --per_device_train_batch_size 8 \
     --freeze_vision_modules true \
     --reward_funcs accuracy \
     --beta 0 \
@@ -80,7 +80,7 @@ torchrun \
     --project gta1 \
     --gradient_checkpointing true \
     --attn_implementation flash_attention_2 \
-    --max_steps 5 \
+    --num_train_epochs 100 \
     --run_name $RUN_NAME \
     --save_steps 10 \
     --save_total_limit 4
