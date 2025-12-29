@@ -7,3 +7,6 @@ grounding/*
 wandb/*
 images/*
 *.pyc
+__pycache__/
+*.py[cod]
+*$py.class
