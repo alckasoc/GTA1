@@ -40,9 +40,12 @@ import yaml
 import json
 import random
 import math
-from qwen_vl_utils import smart_resize
+from qwen_vl_utils import smart_resize, process_vision_info
 from transformers import AutoProcessor
 from liger_kernel.transformers import apply_liger_kernel_to_qwen2_5_vl
+import torch
+import wandb
+from utils.inference_utils import run_single_inference, extract_coordinates, plot_coordinates_on_image
 
 @dataclass
 class GRPOScriptArguments(ScriptArguments):
@@ -151,6 +154,7 @@ def parse_coordinates(raw_string):
     else:
         return matches[0]
 
+
 def click_reward(completions, solution, **kwargs):
     def isin(x,y, sol):
         boxs,ratio_h,ratio_w=sol[:3]
@@ -181,6 +185,7 @@ def click_reward(completions, solution, **kwargs):
         if os.getenv("DEBUG_MODE") == "true":
             log_path = os.getenv("LOG_PATH")
             # local_rank = int(os.getenv("LOCAL_RANK", 0))
+            current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             with open(log_path, "a", encoding='utf-8') as f:
                 f.write(f"------------- {current_time} Accuracy reward: {reward} -------------\n")
                 f.write(f"Content: {content}\n")
@@ -199,6 +204,143 @@ reward_funcs_registry = {
     "accuracy": click_reward,
     "format": format_reward,
 }
+
+
+def evaluate_and_log_to_wandb(trainer, dataset, processing_class, script_args, num_examples=1):
+    """Run inference on a subset of examples and log results to wandb table."""
+    run = wandb.init(project="huggingface", name="eval")
+    
+    model = trainer.model
+    model.eval()
+    
+    # Get subset of examples (don't request more than available)
+    num_available = len(dataset)
+    num_to_eval = min(num_examples, num_available)
+    if num_to_eval == 0:
+        print(f"Warning: Dataset has 0 examples, skipping evaluation")
+        return
+    
+    eval_indices = list(range(num_available))
+    # random.seed(42)
+    random.shuffle(eval_indices)
+    eval_indices = eval_indices[:num_to_eval]
+    print(f"Evaluating on {num_to_eval} example(s) (dataset has {num_available} total)")
+    
+    table_data = []
+
+    print(f"Evaluating on {eval_indices} examples")
+    
+    with torch.no_grad():
+        for idx in eval_indices:
+            example = dataset[idx]
+            image = example['image'][0]  # Get the PIL Image
+            prompt = example['prompt']
+            solution = example['solution']
+            problem = example['problem']
+            
+            # Get original image dimensions for scaling
+            original_image_path = os.path.join(script_args.image_root, dataset.list_data_dict[idx]['image'])
+            original_image = Image.open(original_image_path).convert("RGB")
+            original_width, original_height = original_image.width, original_image.height
+            
+            # Get resized dimensions
+            resized_height, resized_width = image.height, image.width
+            
+            # Get instruction from problem
+            instruction = problem.replace("<image>", "").strip()
+            
+            # Run inference using shared utility
+            results = run_single_inference(
+                model=model,
+                processor=processing_class,
+                image=original_image,  # Use original image, utility will resize
+                instruction=instruction,
+                max_new_tokens=32,
+                resized_height=resized_height,
+                resized_width=resized_width
+            )
+            
+            output_text = results['output_text']
+            pred_x = results['pred_x']
+            pred_y = results['pred_y']
+            pred_x_scaled = results['pred_x_scaled']
+            pred_y_scaled = results['pred_y_scaled']
+            scale_x = results['scale_x']
+            scale_y = results['scale_y']
+            
+            # Get ground truth box
+            # The bbox in solution is stored as absolute pixel coordinates from the JSON
+            # Get it directly from the dataset's list_data_dict for accuracy
+            bbox_from_json = dataset.list_data_dict[idx]['bbox']
+            x0, y0, x1, y1 = bbox_from_json
+            
+            # Bbox is already in original image coordinates
+            gt_bbox_original = [x0, y0, x1, y1]
+            # Get center point in original coordinates
+            gt_center_x = (x0 + x1) / 2
+            gt_center_y = (y0 + y1) / 2
+            
+            # Also get from solution for correctness check (in resized coordinates)
+            boxs, ratio_h, ratio_w = solution[:3]
+            if not isinstance(boxs[0], list):
+                boxs = [boxs]
+            
+            # Check if prediction is correct (in resized coordinates)
+            is_correct = False
+            for box in boxs:
+                x0, y0, x1, y1 = box
+                x0_scaled = int(x0 * ratio_w * resized_width)
+                y0_scaled = int(y0 * ratio_h * resized_height)
+                x1_scaled = int(x1 * ratio_w * resized_width)
+                y1_scaled = int(y1 * ratio_h * resized_height)
+                if pred_x <= x1_scaled and pred_x >= x0_scaled:
+                    if pred_y <= y1_scaled and pred_y >= y0_scaled:
+                        is_correct = True
+                        break
+            
+            # Create annotated image with predictions and ground truth
+            annotated_image = plot_coordinates_on_image(
+                image=original_image,
+                pred_x=pred_x_scaled,
+                pred_y=pred_y_scaled,
+                gt_x=gt_center_x,
+                gt_y=gt_center_y,
+                gt_bbox=gt_bbox_original,
+                show_text=True
+            )
+            
+            # Format bbox as string
+            gt_bbox_str = f"[{int(x0)}, {int(y0)}, {int(x1)}, {int(y1)}]"
+            
+            # Add to table data
+            table_data.append([
+                idx,
+                wandb.Image(annotated_image, caption=f"Example {idx}"),
+                f"({pred_x_scaled:.1f}, {pred_y_scaled:.1f})",
+                f"({gt_center_x:.1f}, {gt_center_y:.1f})",
+                gt_bbox_str
+            ])
+
+
+    print(f"Table data: {table_data}")
+    if table_data:
+        # Create wandb table with updated columns
+        table_columns = ["Index", "Annotated Image", "Predicted Coordinate", "Ground Truth Coordinate", "Ground Truth Bbox"]
+        print(f"Creating wandb table with columns: {table_columns}")
+        print(f"Number of data rows: {len(table_data)}, Number of columns: {len(table_columns)}")
+        table = wandb.Table(
+            columns=table_columns,
+            data=table_data
+        )
+        
+        # Log to wandb (will use the same run that trainer initialized)
+        run.log({"somethign else": table})
+        print(f"Logged evaluation results for {len(table_data)} example(s) to wandb run: {wandb.run.name if wandb.run else 'unknown'}")
+    else:
+        print(f"Warning: No evaluation data collected. Tried {len(eval_indices)} example(s) but all failed.")
+    
+    run.finish()
+    model.train()
 
 
 def main(script_args, training_args, model_args):
@@ -240,6 +382,12 @@ def main(script_args, training_args, model_args):
         trainer.train()
 
     trainer.save_model(training_args.output_dir)
+    
+    # Run evaluation and log to wandb
+    if training_args.report_to and "wandb" in training_args.report_to:
+        print("Running evaluation on subset of examples...")
+        evaluate_and_log_to_wandb(trainer, dataset, processing_class, script_args, num_examples=1)
+    
     if training_args.push_to_hub:
         trainer.push_to_hub(dataset_name=script_args.dataset_name)
 

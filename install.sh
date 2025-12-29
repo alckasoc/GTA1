@@ -53,19 +53,19 @@ cd ../..
 
 RUN_NAME=test
 torchrun \
-    --nproc_per_node 1 \
+    --nproc_per_node 2 \
     --max-restarts 3 \
     --rdzv_backend c10d \
     --rdzv_endpoint "localhost:29500" src/grpo_grounding.py \
     --deepspeed local_scripts/zero3.json \
     --output_dir grounding/$RUN_NAME \
     --model_name_or_path "Qwen/Qwen2.5-VL-3B-Instruct"  \
-    --dataset_name images/inp.json \
+    --dataset_name images/inp_copy.json \
     --image_root "./images/" \
     --max_prompt_length 1024 \
     --max_completion_length 128 \
     --num_generations 8 \
-    --per_device_train_batch_size 8 \
+    --per_device_train_batch_size 4 \
     --freeze_vision_modules true \
     --reward_funcs accuracy \
     --beta 0 \
@@ -80,8 +80,16 @@ torchrun \
     --project gta1 \
     --gradient_checkpointing true \
     --attn_implementation flash_attention_2 \
-    --num_train_epochs 2 \
+    --max_steps 5 \
     --run_name $RUN_NAME \
     --save_steps 10 \
-    --save_total_limit 4 \
-    --save_only_model false
+    --save_total_limit 4
+
+python src/inference.py \
+    --model_path /home/ubuntu/GTA1/grounding/test \
+    --image_path /home/ubuntu/GTA1/images/dataset/Aria-UI_Data/web/images/screenshot_0b1312fe-a57d-4201-8a49-71f73917ad69_part_3.png \
+    --instruction "click on related products" \
+    --output_image /home/ubuntu/GTA1/test_img.png \
+    --gt_x 722 \
+    --gt_y 709 \
+    --gt_bbox 714,694,731,724

@@ -6,3 +6,4 @@ src/trainer/__pycache__/grpo_trainer.cpython-310.pyc
 grounding/*
 wandb/*
 images/*
+*.pyc
