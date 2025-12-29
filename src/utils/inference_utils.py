@@ -144,10 +144,12 @@ def run_single_inference(model, processor, image, instruction, max_new_tokens=32
                        scale_x, scale_y, original_width, original_height, resized_width, resized_height
     """
     # Prepare image and messages
+    print(f"Preparing image and messages...")
     resized_image, system_message, user_message, scale_x, scale_y, original_width, original_height = \
         prepare_image_and_messages(image, instruction, processor, resized_height, resized_width)
     
     # Generate prediction
+    print(f"Generating prediction...")
     output_text = generate_prediction(model, processor, system_message, user_message, max_new_tokens)
     
     # Extract and rescale coordinates

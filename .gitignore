@@ -10,3 +10,4 @@ images/*
 __pycache__/
 *.py[cod]
 *$py.class
+inference_example/*
