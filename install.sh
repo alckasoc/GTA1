@@ -52,6 +52,7 @@ rm image.zip
 cd ../..
 
 RUN_NAME=test
+WANDB_PROJECT=gta1
 torchrun \
     --nproc_per_node 2 \
     --max-restarts 3 \
@@ -77,7 +78,6 @@ torchrun \
     --torch_dtype bfloat16 \
     --data_seed 42 \
     --report_to wandb \
-    --project gta1 \
     --gradient_checkpointing true \
     --attn_implementation flash_attention_2 \
     --num_train_epochs 100 \
@@ -85,4 +85,5 @@ torchrun \
     --save_steps 10 \
     --save_total_limit 4
 
+# Configure args inside script.
 python src/run_eval.py
