@@ -30,7 +30,7 @@ pip install torch==2.9.0 --index-url https://download.pytorch.org/whl/cu128
 pip install torchvision==0.24.0 --index-url https://download.pytorch.org/whl/cu128
 # https://flashattn.dev/
 # ARM64
-pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.6.4/flash_attn-2.8.3%2Bcu128torch2.9-cp310-cp310-linux_aarch64.whl
+# pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.6.4/flash_attn-2.8.3%2Bcu128torch2.9-cp310-cp310-linux_aarch64.whl
 # X86_64
 pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.0/flash_attn-2.8.3%2Bcu128torch2.9-cp310-cp310-linux_x86_64.whl
 pip install deepspeed
@@ -53,7 +53,7 @@ cd ../..
 
 RUN_NAME=test
 torchrun \
-    --nproc_per_node 2 \
+    --nproc_per_node 1 \
     --max-restarts 3 \
     --rdzv_backend c10d \
     --rdzv_endpoint "localhost:29500" src/grpo_grounding.py \
@@ -65,7 +65,7 @@ torchrun \
     --max_prompt_length 1024 \
     --max_completion_length 128 \
     --num_generations 8 \
-    --per_device_train_batch_size 4 \
+    --per_device_train_batch_size 8 \
     --freeze_vision_modules true \
     --reward_funcs accuracy \
     --beta 0 \

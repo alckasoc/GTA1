@@ -5,3 +5,4 @@ src/trainer/__pycache__/grpo_config.cpython-310.pyc
 src/trainer/__pycache__/grpo_trainer.cpython-310.pyc
 grounding/*
 wandb/*
+images/*
