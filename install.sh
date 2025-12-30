@@ -68,7 +68,7 @@ torchrun \
     --num_generations 8 \
     --per_device_train_batch_size 8 \
     --freeze_vision_modules true \
-    --reward_funcs accuracy \
+    --reward_funcs distance \
     --beta 0 \
     --dataloader_num_workers 2 \
     --max_pixels $((4096 * 2160)) \

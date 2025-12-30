@@ -23,6 +23,7 @@
 
 import os
 import re
+import math
 import pathlib
 from datetime import datetime
 from dataclasses import dataclass, field
@@ -191,9 +192,84 @@ def format_reward(completions, **kwargs):
     reward=[1.0 if match else 0.0 for match in matches]
     return reward
 
+def distance_reward(completions, solution, **kwargs):
+    """
+    Discrete reward based on normalized distance D_norm = D(p̂,B) / D_max(B,I).
+    - D(p̂,B): signed distance from predicted point to box (negative inside, positive outside)
+    - D_max(B,I): max possible distance within image to box
+    """
+    contents = [completion[0]["content"] for completion in completions]
+    rewards = []
+    
+    for content, sol in zip(contents, solution):
+        reward = -1.0
+        best_d_norm = -1.0  # default: worst case
+        try:
+            pred_x, pred_y = parse_coordinates(content)
+            boxs, ratio_h, ratio_w = sol[:3]
+            
+            if not isinstance(boxs[0], list):
+                boxs = [boxs]
+            
+            img_h, img_w = int(1000 * ratio_h), int(1000 * ratio_w)
+            best_d_norm = -float('inf')
+            
+            for box in boxs:
+                x0, y0, x1, y1 = box
+                x0, x1 = int(x0 * ratio_w), int(x1 * ratio_w)
+                y0, y1 = int(y0 * ratio_h), int(y1 * ratio_h)
+                
+                # D_max: max distance from any image corner to box
+                d_max = 0
+                for cx, cy in [(0, 0), (0, img_h), (img_w, 0), (img_w, img_h)]:
+                    dx = max(x0 - cx, 0, cx - x1)
+                    dy = max(y0 - cy, 0, cy - y1)
+                    d_max = max(d_max, math.sqrt(dx**2 + dy**2))
+                d_max = max(d_max, 1)
+                
+                inside = (x0 <= pred_x <= x1) and (y0 <= pred_y <= y1)
+                if inside:
+                    # Inside: positive D_norm (distance to nearest edge, normalized)
+                    dist_to_edge = min(pred_x - x0, x1 - pred_x, pred_y - y0, y1 - pred_y)
+                    d_norm = dist_to_edge / d_max
+                else:
+                    # Outside: negative D_norm
+                    dx = max(x0 - pred_x, 0, pred_x - x1)
+                    dy = max(y0 - pred_y, 0, pred_y - y1)
+                    d_norm = -math.sqrt(dx**2 + dy**2) / d_max
+                
+                best_d_norm = max(best_d_norm, d_norm)
+        except Exception:
+            pass
+        
+        # Piecewise reward function
+        if best_d_norm < -0.5:
+            reward = -1.0
+        elif best_d_norm < -0.1:
+            reward = -0.5
+        elif best_d_norm < 0:
+            reward = -0.1
+        elif best_d_norm < 0.1:
+            reward = 0.1
+        elif best_d_norm < 0.5:
+            reward = 0.5
+        else:
+            reward = 1.0
+        
+        rewards.append(reward)
+        if os.getenv("DEBUG_MODE") == "true":
+            log_path = os.getenv("LOG_PATH")
+            current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            with open(log_path, "a", encoding='utf-8') as f:
+                f.write(f"------------- {current_time} Distance reward: {reward} -------------\n")
+                f.write(f"Content: {content}\n")
+                f.write(f"Solution: {sol}\n")
+    return rewards
+
 reward_funcs_registry = {
     "accuracy": click_reward,
     "format": format_reward,
+    "distance": distance_reward,
 }
 
 
