@@ -87,3 +87,7 @@ torchrun \
 
 # Configure args inside script.
 python src/run_eval.py
+
+# Upload model to Hugging Face.
+huggingface-cli login
+huggingface-cli upload alckasoc/mini-gta1-3b /home/ubuntu/GTA1/grounding/distance_reward/checkpoint-80 checkpoint-80-best-distance-reward

