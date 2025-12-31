@@ -51,7 +51,7 @@ unzip image.zip
 rm image.zip
 cd ../..
 
-RUN_NAME=test
+RUN_NAME=distance_reward
 WANDB_PROJECT=gta1
 torchrun \
     --nproc_per_node 2 \
