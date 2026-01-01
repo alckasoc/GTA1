@@ -6,6 +6,10 @@ Exploring some code for my 2025 winter break, christmas, and new year! Merry Chr
 
 I originally forked this project from https://github.com/Yan98/GTA1 — please take a moment to check out the original repo and give it an upvote! Thanks GTA1 for making this repo open-source. 
 
+## Setup
+
+Same setup as GTA1. Refer to `install.sh` for the all the commands I used to run training. Data is stored in `the_data`. To evaluate on the 100 ScreenSpot Pro examples, run the `run_screenspot_pro/results/download_images.py` to download the 100 images. Then, copy the `run_screenspot_pro/eval_screenspot_pro.py`, `run_screenspot_pro/eval_screenspot_pro_parallel.py`, `run_screenspot_pro/model_factory.py`, and `run_screenspot_pro/qwen2_5vl_new.py` into your cloned ScreenSpot Pro repo. The eval run command is in the `run.sh`.  
+
 ## TL;DR
 
 <img src="./assets/img/image.png" width="160" align="left" style="margin-right:20px;margin-bottom:4px;">
@@ -17,8 +21,8 @@ I evaluated on 100 random ScreenSpot Pro examples.
 
 I also tested with my implementation of the [GroundCUA](https://github.com/ServiceNow/GroundCUA) reward function trained on the same 8 examples. 
 
-wandb project: https://wandb.ai/vincenttu/gta1
-HF repo: https://huggingface.co/alckasoc/mini-gta1-3b
+- wandb project: https://wandb.ai/vincenttu/gta1
+- HF repo: https://huggingface.co/alckasoc/mini-gta1-3b
 
 ### Findings
 
