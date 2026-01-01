@@ -68,4 +68,4 @@ It was way off! Larger screens will make icons much smaller and thus harder I'm 
 | % within 10% of diagonal            |   44.05  |    40.66    |
 | % within 20% of diagonal            |   55.95  |    62.64    |
 
-I had a lot of fun learning and training a mini grounding model. Though there's no clear conclusion from this, it was interesting to see how the 2 reward functions compared!
+I had a lot of fun learning and training a mini grounding model. Though there's no clear conclusion from this, it was interesting to see how the 2 reward functions compared! Thanks for viewing! 👋
