@@ -10,12 +10,12 @@ from PIL import Image, ImageDraw, ImageFont
 from tqdm import tqdm
 
 # Configuration
-JSON_PATH = "/Users/vincent/Desktop/test/GTA1/run_screenspot_pro/results/gta1_distance_reward_100.json"
+JSON_PATH = "/Users/vincent/Desktop/test/GTA1/run_screenspot_pro/results/gta1_baseline_100.json"
 IMAGE_DIR = "/Users/vincent/Desktop/test/GTA1/screenspot_pro_mini_evalset"
-OUTPUT_DIR = "/Users/vincent/Desktop/test/GTA1/screenspot_pro_mini_annotated_gta1_distance_reward_100"
+OUTPUT_DIR = "/Users/vincent/Desktop/test/GTA1/screenspot_pro_mini_annotated_gta1_baseline_100_tmp"
 
-# Set to True to only annotate correct predictions, False to annotate all
-CORRECT_ONLY = True
+# Filter mode: "all", "correct", or "wrong"
+FILTER_MODE = "all"  # Options: "all", "correct", "wrong"
 
 # Colors
 GT_COLOR = (0, 255, 0)  # Green for ground truth bbox
@@ -67,9 +67,10 @@ def draw_label(draw: ImageDraw.Draw, text: str, position: tuple, color: tuple, b
     draw.text((x + padding, y + padding), text, fill=color)
 
 
-def annotate_image(entry: dict, image_dir: str, output_dir: str, correct_only: bool = False) -> tuple[bool, str]:
+def annotate_image(entry: dict, image_dir: str, output_dir: str, filter_mode: str = "all") -> tuple[bool, str]:
     """
     Annotate a single image with bbox and prediction.
+    filter_mode: "all", "correct", or "wrong"
     Returns: (success, message)
     """
     img_path = entry.get("img_path", "")
@@ -78,9 +79,11 @@ def annotate_image(entry: dict, image_dir: str, output_dir: str, correct_only: b
     correctness = entry.get("correctness", "")
     prompt = entry.get("prompt_to_evaluate", "")
     
-    # Skip entries that are not correct (if flag is set)
-    if correct_only and correctness != "correct":
+    # Filter based on mode
+    if filter_mode == "correct" and correctness != "correct":
         return False, "Skipped (not correct)"
+    if filter_mode == "wrong" and correctness != "wrong":
+        return False, "Skipped (not wrong)"
     
     if not img_path or not bbox or not pred:
         return False, "Missing required fields"
@@ -133,7 +136,7 @@ def annotate_image(entry: dict, image_dir: str, output_dir: str, correct_only: b
 def main():
     # Load JSON
     print(f"Loading JSON from {JSON_PATH}...")
-    print(f"CORRECT_ONLY: {CORRECT_ONLY}")
+    print(f"FILTER_MODE: {FILTER_MODE}")
     with open(JSON_PATH, "r") as f:
         data = json.load(f)
     
@@ -150,10 +153,10 @@ def main():
     error_entries = []
     
     for entry in tqdm(details, desc="Annotating images"):
-        success, message = annotate_image(entry, IMAGE_DIR, OUTPUT_DIR, correct_only=CORRECT_ONLY)
+        success, message = annotate_image(entry, IMAGE_DIR, OUTPUT_DIR, filter_mode=FILTER_MODE)
         if success:
             success_count += 1
-        elif message == "Skipped (not correct)":
+        elif message.startswith("Skipped"):
             skipped_count += 1
         else:
             error_count += 1
@@ -163,8 +166,8 @@ def main():
     print(f"\n{'='*50}")
     print(f"Annotation complete!")
     print(f"  Annotated: {success_count}")
-    if CORRECT_ONLY:
-        print(f"  Skipped (not correct): {skipped_count}")
+    if FILTER_MODE != "all":
+        print(f"  Skipped (filter={FILTER_MODE}): {skipped_count}")
     print(f"  Errors: {error_count}")
     print(f"  Output directory: {OUTPUT_DIR}")
     
