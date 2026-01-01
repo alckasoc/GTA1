@@ -2,9 +2,18 @@
   <h1>GTA1: GUI Test-time Scaling Agent</h1> 
 </div>
 
-Exploring some code for my 2025 winter break, christmas, and new year!
+Exploring some code for my 2025 winter break, christmas, and new year! Merry Christmas and Happy New Years!
+
+I originally forked this project from https://github.com/Yan98/GTA1 — please take a moment to check out the original repo and give it an upvote! Thanks GTA1 for making this repo open-source. 
 
 ## TL;DR
+
+<p>
+  <img src="./assets/img/image.png" width="160" style="float:left; margin-right: 20px;"/>
+  <span>
+    Exploring some code for my 2025 winter break, christmas, and new year!
+  </span>
+</p>
 
 I spent $230 on Lambda compute (most of it went into setting up the environment and debugging things I thought were easy to debug 😭) to run a very *very* small experiment.
 
@@ -38,6 +47,3 @@ I took a quick look on both the 100 epoch baseline and 100 epoch distance reward
  
 There were no formatting issues for either run (baseline/distance reward 100 epochs). I didn't look at all all the incorrect examples for both of the 2 runs. 
 
-## Credit
-
-I originally forked this project from https://github.com/Yan98/GTA1 — please take a moment to check out the original repo and give it an upvote! Thanks GTA1 for making this repo open-source. 
