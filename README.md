@@ -11,11 +11,10 @@ I originally forked this project from https://github.com/Yan98/GTA1 — please t
 <p>
   <img src="./assets/img/image.png" width="160" style="float:left; margin-right: 20px;"/>
   <span>
-    Exploring some code for my 2025 winter break, christmas, and new year!
+    I spent $230 on Lambda compute (most of it went into setting up the environment and debugging things I thought were easy to debug 😭) to run a very *very* small experiment.
+
   </span>
 </p>
-
-I spent $230 on Lambda compute (most of it went into setting up the environment and debugging things I thought were easy to debug 😭) to run a very *very* small experiment.
 
 I trained Qwen2.5-VL-3B-Instruct with the GTA1 training code on *only* 8 examples from the Aria-UI dataset they used (originally wanted to do 100 examples but it would take too long and compute was expensive). I evaluated on 100 random ScreenSpot Pro examples.
 
