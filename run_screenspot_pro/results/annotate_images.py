@@ -10,9 +10,12 @@ from PIL import Image, ImageDraw, ImageFont
 from tqdm import tqdm
 
 # Configuration
-JSON_PATH = "/Users/vincent/Desktop/test/GTA1/run_screenspot_pro/results/base_model_3b.json"
+JSON_PATH = "/Users/vincent/Desktop/test/GTA1/run_screenspot_pro/results/gta1_distance_reward_100.json"
 IMAGE_DIR = "/Users/vincent/Desktop/test/GTA1/screenspot_pro_mini_evalset"
-OUTPUT_DIR = "/Users/vincent/Desktop/test/GTA1/screenspot_pro_mini_annotated"
+OUTPUT_DIR = "/Users/vincent/Desktop/test/GTA1/screenspot_pro_mini_annotated_gta1_distance_reward_100"
+
+# Set to True to only annotate correct predictions, False to annotate all
+CORRECT_ONLY = True
 
 # Colors
 GT_COLOR = (0, 255, 0)  # Green for ground truth bbox
@@ -64,7 +67,7 @@ def draw_label(draw: ImageDraw.Draw, text: str, position: tuple, color: tuple, b
     draw.text((x + padding, y + padding), text, fill=color)
 
 
-def annotate_image(entry: dict, image_dir: str, output_dir: str) -> tuple[bool, str]:
+def annotate_image(entry: dict, image_dir: str, output_dir: str, correct_only: bool = False) -> tuple[bool, str]:
     """
     Annotate a single image with bbox and prediction.
     Returns: (success, message)
@@ -74,6 +77,10 @@ def annotate_image(entry: dict, image_dir: str, output_dir: str) -> tuple[bool, 
     pred = entry.get("pred", [])
     correctness = entry.get("correctness", "")
     prompt = entry.get("prompt_to_evaluate", "")
+    
+    # Skip entries that are not correct (if flag is set)
+    if correct_only and correctness != "correct":
+        return False, "Skipped (not correct)"
     
     if not img_path or not bbox or not pred:
         return False, "Missing required fields"
@@ -126,6 +133,7 @@ def annotate_image(entry: dict, image_dir: str, output_dir: str) -> tuple[bool, 
 def main():
     # Load JSON
     print(f"Loading JSON from {JSON_PATH}...")
+    print(f"CORRECT_ONLY: {CORRECT_ONLY}")
     with open(JSON_PATH, "r") as f:
         data = json.load(f)
     
@@ -137,30 +145,35 @@ def main():
     
     # Process each entry
     success_count = 0
-    fail_count = 0
-    failed_entries = []
+    skipped_count = 0
+    error_count = 0
+    error_entries = []
     
     for entry in tqdm(details, desc="Annotating images"):
-        success, message = annotate_image(entry, IMAGE_DIR, OUTPUT_DIR)
+        success, message = annotate_image(entry, IMAGE_DIR, OUTPUT_DIR, correct_only=CORRECT_ONLY)
         if success:
             success_count += 1
+        elif message == "Skipped (not correct)":
+            skipped_count += 1
         else:
-            fail_count += 1
-            failed_entries.append((extract_relative_path(entry.get("img_path", "")), message))
+            error_count += 1
+            error_entries.append((extract_relative_path(entry.get("img_path", "")), message))
     
     # Summary
     print(f"\n{'='*50}")
     print(f"Annotation complete!")
-    print(f"  Success: {success_count}")
-    print(f"  Failed: {fail_count}")
+    print(f"  Annotated: {success_count}")
+    if CORRECT_ONLY:
+        print(f"  Skipped (not correct): {skipped_count}")
+    print(f"  Errors: {error_count}")
     print(f"  Output directory: {OUTPUT_DIR}")
     
-    if failed_entries:
-        print(f"\nFailed entries:")
-        for path, error in failed_entries[:10]:  # Show first 10
+    if error_entries:
+        print(f"\nError entries:")
+        for path, error in error_entries[:10]:  # Show first 10
             print(f"  - {path}: {error}")
-        if len(failed_entries) > 10:
-            print(f"  ... and {len(failed_entries) - 10} more")
+        if len(error_entries) > 10:
+            print(f"  ... and {len(error_entries) - 10} more")
 
 
 if __name__ == "__main__":
