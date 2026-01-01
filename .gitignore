@@ -11,3 +11,5 @@ __pycache__/
 *.py[cod]
 *$py.class
 inference_example/*
+screenspot_pro_mini_annotated/*
+screenspot_pro_mini_evalset/*
