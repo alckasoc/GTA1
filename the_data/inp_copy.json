@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "image": "dataset/Aria-UI_Data/web/images/screenshot_0b1312fe-a57d-4201-8a49-71f73917ad69_part_3.png",
+    "bbox": [
+      714,
+      694,
+      731,
+      724
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>send your inquiry."
+      },
+      {
+        "from": "gpt",
+        "value": "(722, 709)"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "image": "dataset/Aria-UI_Context-aware_Data/AMEX/screenshot/2024_4_30_2_43_4fec9d235cd24b52bbc95c8a3b76602a-17.png",
+    "bbox": [
+      29,
+      458,
+      136,
+      512
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>mark APA Hotel & Resort as a favorite"
+      },
+      {
+        "from": "gpt",
+        "value": "(82, 485)"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "image": "desktop_domain/windows_split/20240828_195428_before_screenshot_sub3.png",
+    "bbox": [
+      477,
+      122,
+      800,
+      185
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>Log in with a managed Meta account"
+      },
+      {
+        "from": "gpt",
+        "value": "(638, 153)"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "image": "desktop_domain/windows_split/20240823_031729_before_screenshot.png",
+    "bbox": [
+      164,
+      405,
+      269,
+      420
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>www.healthtechconnect.org.uk"
+      },
+      {
+        "from": "gpt",
+        "value": "(216, 412)"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "image": "dataset/Aria-UI_Context-aware_Data/AMEX/screenshot/Vibrary_2024_3_9_16_12-296.png",
+    "bbox": [
+      407,
+      501,
+      465,
+      528
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>wait for the content to load"
+      },
+      {
+        "from": "gpt",
+        "value": "(436.0, 514.5)"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "image": "dataset/Aria-UI_Data/web/images/screenshot_5aabb5fe-d49e-425e-a8e8-700e4ac26727_part_1.png",
+    "bbox": [
+      819,
+      361,
+      840,
+      390
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>show filter options."
+      },
+      {
+        "from": "gpt",
+        "value": "(829.5, 375.5)"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "image": "dataset/Aria-UI_Data/web/images/screenshot_a1112510-b5e5-46c3-b2ec-e72d2bbda327_part_3.png",
+    "bbox": [
+      691,
+      569,
+      815,
+      601
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>learn how to make bamboo furniture."
+      },
+      {
+        "from": "gpt",
+        "value": "(753, 585)"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "image": "dataset/Aria-UI_Context-aware_Data/AMEX/screenshot/IKEA_HK_2024_3_6_15_5-29.png",
+    "bbox": [
+      50,
+      431,
+      950,
+      662
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>This input describes a visual scene rather than an interactive GUI element. However, if we were to consider the elements within this scene as potentially interactive in a digital context, such as in a virtual home design app or an e-commerce platform, the instructions could be:"
+      },
+      {
+        "from": "gpt",
+        "value": "(500, 546)"
+      }
+    ]
+  }
+]

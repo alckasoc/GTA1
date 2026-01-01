@@ -18,6 +18,7 @@ I evaluated on 100 random ScreenSpot Pro examples.
 I also tested with my implementation of the [GroundCUA](https://github.com/ServiceNow/GroundCUA) reward function trained on the same 8 examples. 
 
 wandb project: https://wandb.ai/vincenttu/gta1
+HF repo: https://huggingface.co/alckasoc/mini-gta1-3b
 
 ### Findings
 
@@ -43,3 +44,4 @@ I took a quick look on both the 100 epoch baseline and 100 epoch distance reward
  
 There were no formatting issues for either run (baseline/distance reward 100 epochs). I didn't look at all all the incorrect examples for both of the 2 runs. 
 
+I had a lot of fun training 
