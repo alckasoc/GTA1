@@ -28,6 +28,8 @@ I also tested with my implementation of the [GroundCUA](https://github.com/Servi
 
 This experiment is way too small to make any sense out of, but we can speculate. 
 
+![](./assets/img/reward_plot.png)
+
 I included epoch step 80 because it had the highest reward. 
 
 | Model/Setting              | # Correct |
